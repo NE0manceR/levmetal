@@ -264,6 +264,16 @@
       <div class="menu__btn menu__btn-services">
         <img src="styles/images/icons/ic_menu.svg" alt="img">
         Послуги
+
+        <div class="menu__services-item">
+          <div class="menu__services-wrap">
+            <a class="menu__services-link" href="">Послуги</a>
+            <a class="menu__services-link" href="">Послуги</a>
+            <a class="menu__services-link" href="">Послуги</a>
+            <a class="menu__services-link" href="">Послуги</a>
+          </div>
+
+        </div>
       </div>
       <a class="menu__link menu__link-about" href="/">Про компанію</a>
       <a class="menu__link menu__link-contacts" href="/">Контакти</a>
@@ -396,6 +406,73 @@
 
     </section>
 
+    <footer class="footer">
+      <div class="footer__contacts">
+        <span class="footer__title">Контакти</span>
+
+        <div class="footer__cotacts-wrap">
+          <span class="footer__contacts-name">Менеджер зі збуту</span>
+          <div class="footer__phone-wrap">
+            <a href="tel:380987570000">+380987570000</a>
+            <a href="tel:380987570000">+380737570000</a>
+          </div>
+          <a href="mailto:info@levmetal.com">info@levmetal.com</a>
+        </div>
+
+        <div class="footer__cotacts-wrap">
+          <span class="footer__contacts-name">
+            Лазерна порізка, гнуття
+            металу, порошкове фарбування
+          </span>
+          <div class="footer__phone-wrap">
+            <a href="tel:380987570000">+380964578245</a>
+          </div>
+          <a href="mailto:info@levmetal.com">info@levmetal.com</a>
+        </div>
+
+        <div class=" footer__cotacts-wrap footer__individual">
+          <span class="footer__contacts-name">
+            Індивідуальні замовлення
+          </span>
+          <div class="footer__phone-wrap">
+            <a href="tel:380987570000">+380964578245</a>
+          </div>
+          <a href="mailto:info@levmetal.com">info@levmetal.com</a>
+        </div>
+
+        <span class="footer__title">Підписатись на оновлення та знижки</span>
+        <div class="footer__input-wrap">
+          <input class="footer__input" type="text" placeholder="Введіть ваш email">
+          <button class="red-btn">Підписатись</button>
+        </div>
+      </div>
+
+      <div class="footer__address">
+        <span class="footer__title">Адреса</span>
+        <span class="footer__text">79037, Україна</span>
+        <span class="footer__text">м.Львів, вул. Земельна 28А </span>
+        <span class="footer__title">Години роботи:</span>
+        <span class="footer__text">пн-пт: 8:30 -17:30</span>
+        <span class="footer__title">Email</span>
+        <span class="footer__text">info@levmetal.com</span>
+        <span class="footer__title">Соціальні мережі:</span>
+        <a href="/">
+          <img src="styles/images/icons/ic_facebook.svg" alt="img">
+        </a>
+      </div>
+
+      <div class="footer__customers">
+        <span class="footer__title">Клієнтам</span>
+        <a href="/" class="footer__text">Про компанію</span>
+        <a href="/" class="footer__text">Доставка і оплата</span>
+        <a href="/" class="footer__text">Повернення та обмін</span>
+        <a href="/" class="footer__text">Оферта</span>
+        <a href="/" class="footer__text">Сертифікати якості</span>
+        <a href="/" class="footer__text">Блог</span>
+        <a href="/" class="footer__text footer__text_color">Прайс</span>
+        <a href="/" class="footer__text footer__text_color">Каталог товарів</span>
+      </div>
+    </footer>
   </main>
   <script src="swiper/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
