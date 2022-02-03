@@ -264,7 +264,7 @@
       <div class="menu__btn menu__btn-services">
         <img src="styles/images/icons/ic_menu.svg" alt="img">
         Послуги
-
+                    
         <div class="menu__services-item">
           <div class="menu__services-wrap">
             <a class="menu__services-link" href="">Послуги</a>
