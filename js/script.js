@@ -34,7 +34,7 @@ $('.header__language').on('click', function () {
   $('.header__laguage-icon').toggleClass('active');
 }); // ======= Open language list=============
 
-// ============show menu items==================
+// ============show menu items desktop menu==================
 $('.menu__item').mouseenter(function () {
   $('.menu__item').removeClass('active');
   $(this).addClass('active');
