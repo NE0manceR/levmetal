@@ -263,7 +263,7 @@
       <div class="menu__btn menu__btn-services">
         <img src="styles/images/icons/ic_menu.svg" alt="img">
         Послуги
-                    
+
         <div class="menu__services-item">
           <div class="menu__services-wrap">
             <a class="menu__services-link" href="">Послуги</a>
@@ -280,206 +280,121 @@
     <img class="menu__cart-icon" src="styles/images/icons/ic_cart.svg" alt="img">
   </div>
 
-  <main class="home">
-    <section class="home__main-slider-wrap">
+  <main class="detail">
+    <div class="crumbs">
+      <a class="crumbs__link" href="">
+        Головна
+        <img class="crumbs__arrow" src="styles/images/icons/ic_arrow-crumbs.svg" alt="img">
+      </a>
+      <a class="crumbs__link" href="">
+        Шафи металеві
+        <img class="crumbs__arrow" src="styles/images/icons/ic_arrow-crumbs.svg" alt="img">
+      </a>
+      <span>Однорівневі</span>
+    </div>
 
-      <div class="main-slider">
-        <div class="swiper homeMain">
+    <div class="detail__title-wrap">
+      <h1 class="detail__title">Шафа металева для одягу ШОМ 1/30</h1>
+      <span class="detail__art">Код товару: 0000000</span>
+    </div>
+
+    <div class="detail__item">
+      <div class="detail__item-photo">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper detal-slider-big">
           <div class="swiper-wrapper">
-            <?php for ($i = 0; $i < 3; $i++) { ?>
-              <div class="swiper-slide">
-                <img class="main-slider__img" src="styles/images/menu-photo-for-test/image 25.png" alt="img">
-                <div class="main-slider__btn-wrap">
-                  <p class="main-slider__title">Шафи металеві для одягу</p>
-                  <a class="red-btn" href="/">Детальніше</a>
-                </div>
-              </div>
-            <?php } ?>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/image 25.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/slider.png" />
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-
-      <div class="main-items">
-        <a href="/" class="main-items__card">
-          <img class="main-items__card-img" src="styles/images/menu-photo-for-test/slider.png" alt="img">
-          <p class="main-items__card-text">Склади шафу сам</p>
-        </a>
-
-        <a href="/" class="main-items__card">
-          <img class="main-items__card-img" src="styles/images/menu-photo-for-test/image 25.png" alt="img">
-          <p class="main-items__card-text">Склади шафу сам</p>
-        </a>
-
-        <a href="/" class="main-items__card">
-          <img class="main-items__card-img" src="styles/images/menu-photo-for-test/slider.png" alt="img">
-          <p class="main-items__card-text">Склади шафу сам</p>
-        </a>
-      </div>
-
-    </section>
-
-    <section class="home__slider">
-      <h2 class="slider-title">Знижки</h2>
-      <div class="slider">
-        <div class="swiper home-item-slider">
+        <div thumbsSlider="" class="swiper detal-slider-small">
           <div class="swiper-wrapper">
-            <?php for ($i = 0; $i < 10; $i++) { ?>
-              <div class="swiper-slide">
-                <div class="item-card sale">
-                  <a href=""><img class="item-card__img" src="styles/images/menu-photo-for-test/3.png" alt="img"></a>
-                  <h5 class="item-card__title">Скринька поштова на 4 квартири ЯП-04С</h5>
-                  <div class="item-card__price-block">
-                    <div class="item-card__price-wrap">
-                      <span class="item-card__old-price">708 грн</span>
-                      <span class="item-card__price">508 <span>грн</span></span>
-                    </div>
-                    <div class="item-card__cart">
-                      <div class="item-card__cart-icon"></div>
-                      <div class="item-card__phone-icon"></div>
-                    </div>
-                  </div>
-                </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/image 25.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="styles/images/menu-photo-for-test/slider.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="detail__filter filter">
+        <div class="filter__size">
+          <div class="filter__type">
+            <span class="filter__title">Тип шафи:</span>
+            <div class="filter__type-wrap">
+              <div class="filter__type-title-wrap">
+                <span class="filter__item-main">Однорівнева з додатковою поличкою 0</span>
+                <img class="filter__icon" src="styles/images/icons/ic_drop-down-arrow.svg" alt="img">
               </div>
-            <?php } ?>
-          </div>
-        </div>
-        <img class="swiper-button-next next-sale" src="styles/images/icons/ic_slider-arrow-right.svg" alt="img">
-        <img class="swiper-button-prev prev-sale" src="styles/images/icons/ic_slider-arrow-left.svg" alt="img">
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <section class="home__slider">
-      <h2 class="slider-title">Новинки</h2>
-      <div class="slider">
-        <div class="swiper home-item-slider-new">
-          <div class="swiper-wrapper">
-            <?php for ($i = 0; $i < 10; $i++) { ?>
-              <div class="swiper-slide">
-                <div class="item-card new">
-                  <a href=""><img class="item-card__img" src="styles/images/menu-photo-for-test/3.png" alt="img"></a>
-                  <h5 class="item-card__title">Скринька поштова на 4 квартири ЯП-04С</h5>
-                  <div class="item-card__price-block">
-                    <div class="item-card__price-wrap">
-                      <span class="item-card__old-price">708 грн</span>
-                      <span class="item-card__price">508 <span>грн</span></span>
-                    </div>
-                    <div class="item-card__cart">
-                      <div class="item-card__cart-icon"></div>
-                      <div class="item-card__phone-icon"></div>
-                    </div>
-                  </div>
-                </div>
+              <div class="filter__type-item">
+                <?php for ($i = 0; $i < 10; $i++) { ?>
+                  <label class="filter__item-label" for="name-<?= $i ?>">
+                    <span class="filter__item">Однорівнева з додатковою поличкою <?= $i ?></span>
+                    <input id="name-<?= $i ?>" name="item-type" type="radio" value="Однорівнева з додатковою поличкою <?= $i ?>">
+                  </label>
+                <?php } ?>
               </div>
-            <?php } ?>
+            </div>
+
+            <span class="filter__title">Ширина секцій:</span>
+            <div class="filter__radio-wrap">
+              <label for="name" name="width" class="filter__width-wrap active">
+                <input id="name" name="some-radio" type="radio" checked>
+                <div class="filter__width-radio"></div>
+                <span class="filter__width-text">300 мм</span>
+              </label>
+              <label for="name2" name="width" class="filter__width-wrap">
+                <input id="name2" name="some-radio" type="radio">
+                <div class="filter__width-radio"></div>
+                <span class="filter__width-text">400 мм</span>
+              </label>
+            </div>
+
+            <span class="filter__title">Кількість секцій::</span>
+            <div class="filter__radio-wrap">
+              <?php for ($i = 0; $i < 15; $i++) { ?>
+                <label for="count-<?= $i ?>" name="width" class="filter__width-wrap <?= $i === 0 ? 'active' : '' ?>">
+                  <input id="count-<?= $i ?>" name="some-radio2" type="radio" checked>
+                  <div class="filter__width-radio"></div>
+                  <span class="filter__width-text"><?= $i ?></span>
+                </label>
+
+              <?php } ?>
+
+            </div>
+
           </div>
         </div>
-        <img class="swiper-button-next next-new" src="styles/images/icons/ic_slider-arrow-right.svg" alt="img">
-        <img class="swiper-button-prev prev-new" src="styles/images/icons/ic_slider-arrow-left.svg" alt="img">
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
 
-    <section class="partners">
-      <h2 class="slider-title partners__title">Наші партнери</h2>
-      <div class="partners__items">
-        <?php for ($i = 0; $i < 10; $i++) { ?>
-          <div class="partners__item">
-          </div>
-        <?php } ?>
-      </div>
-    </section>
 
-    <section class="question">
-      <div class="question__wrap">
-        <span class="question__text">
-          Залишились питання? Залиште контакти
-          та ми зв’яжемось з Вами найближчим часом
-        </span>
-        <div class="question__input-wrap">
-          <input class="question__input" type="text" placeholder="+38063">
-          <button class="question__btn">Замовити дзвінок</button>
-        </div>
-      </div>
+      </form>
 
-    </section>
 
-    <footer class="footer">
-      <div class="footer__contacts">
-        <span class="footer__title">Контакти</span>
-
-        <div class="footer__cotacts-wrap">
-          <span class="footer__contacts-name">Менеджер зі збуту</span>
-          <div class="footer__phone-wrap">
-            <a href="tel:380987570000">+380987570000</a>
-            <a href="tel:380987570000">+380737570000</a>
-          </div>
-          <a href="mailto:info@levmetal.com">info@levmetal.com</a>
-        </div>
-
-        <div class="footer__cotacts-wrap">
-          <span class="footer__contacts-name">
-            Лазерна порізка, гнуття
-            металу, порошкове фарбування
-          </span>
-          <div class="footer__phone-wrap">
-            <a href="tel:380987570000">+380964578245</a>
-          </div>
-          <a href="mailto:info@levmetal.com">info@levmetal.com</a>
-        </div>
-
-        <div class=" footer__cotacts-wrap footer__individual">
-          <span class="footer__contacts-name">
-            Індивідуальні замовлення
-          </span>
-          <div class="footer__phone-wrap">
-            <a href="tel:380987570000">+380964578245</a>
-          </div>
-          <a href="mailto:info@levmetal.com">info@levmetal.com</a>
-        </div>
-
-        <span class="footer__title">Підписатись на оновлення та знижки</span>
-        <div class="footer__input-wrap">
-          <input class="footer__input" type="text" placeholder="Введіть ваш email">
-          <button class="red-btn">Підписатись</button>
-        </div>
-      </div>
-
-      <div class="footer__address">
-        <span class="footer__title">Адреса</span>
-        <span class="footer__text">79037, Україна</span>
-        <span class="footer__text">м.Львів, вул. Земельна 28А </span>
-        <span class="footer__title">Години роботи:</span>
-        <span class="footer__text">пн-пт: 8:30 -17:30</span>
-        <span class="footer__title">Email</span>
-        <span class="footer__text">info@levmetal.com</span>
-        <span class="footer__title">Соціальні мережі:</span>
-        <a href="/">
-          <img src="styles/images/icons/ic_facebook.svg" alt="img">
-        </a>
-      </div>
-
-      <div class="footer__customers">
-        <span class="footer__title">Клієнтам</span>
-        <a href="/" class="footer__text">Про компанію</span>
-        <a href="/" class="footer__text">Доставка і оплата</span>
-        <a href="/" class="footer__text">Повернення та обмін</span>
-        <a href="/" class="footer__text">Оферта</span>
-        <a href="/" class="footer__text">Сертифікати якості</span>
-        <a href="/" class="footer__text">Блог</span>
-        <a href="/" class="footer__text footer__text_color">Прайс</span>
-        <a href="/" class="footer__text footer__text_color">Каталог товарів</span>
-      </div>
-    </footer>
+    </div>
   </main>
+
+
   <script src="swiper/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script>
-
-  </script>
 </body>
 
 </html>

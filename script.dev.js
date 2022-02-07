@@ -134,3 +134,31 @@ var homeItem = new Swiper(".home-item-slider-new", {
     }
   }
 });
+var swiper = new Swiper(".detal-slider-small", {
+  spaceBetween: 24,
+  slidesPerView: 3.5,
+  freeMode: true,
+  watchSlidesProgress: true
+});
+var swiper2 = new Swiper(".detal-slider-big", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper
+  }
+}); //================ set slider=============
+//================ type filter =============
+
+$('.filter__type-title-wrap').on('click', openFilter);
+$('.filter__item').on('click', function () {
+  $('.filter__item-main').html($(this).html());
+  openFilter();
+});
+
+function openFilter() {
+  $('.filter__type-wrap').toggleClass('active');
+}
+
+$('.filter__width-wrap').on('click', function (e) {
+  $(this).parent().find('.filter__width-wrap').removeClass('active');
+  $(this).addClass('active');
+});
