@@ -39,12 +39,12 @@
           <h3 class="menu__product-title">Шафи металеві для одягу</h3>
           <div class="menu__product-list">
             <?php for ($i = 0; $i < 12; $i++) { ?>
-              <div class="menu__product">
+              <a href="item.php" class="menu__product">
                 <div class="menu__product-img">
                   <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                 </div>
                 <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-              </div>
+              </a>
             <?php } ?>
           </div>
         </div>
@@ -53,12 +53,12 @@
           <h3 class="menu__product-title">Шафи металеві для одягу</h3>
           <div class="menu__product-list">
             <?php for ($i = 0; $i < 12; $i++) { ?>
-              <div class="menu__product">
+              <a href="item.php" class="menu__product">
                 <div class="menu__product-img">
                   <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                 </div>
                 <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-              </div>
+              </a>
             <?php } ?>
           </div>
         </div>
@@ -132,6 +132,7 @@
 
     </div>
   </header>
+  
   <div class="menu">
     <div class="menu__btn-wrap">
       <div class="menu__btn menu__btn-mobile">
@@ -216,12 +217,12 @@
                 <h3 class="menu__product-title">Шафи металеві для одягу</h3>
                 <div class="menu__product-list">
                   <?php for ($i = 0; $i < 12; $i++) { ?>
-                    <div class="menu__product">
+                    <a href="item.php" class="menu__product">
                       <div class="menu__product-img">
                         <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                       </div>
                       <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-                    </div>
+                    </a>
                   <?php } ?>
                 </div>
               </div>
@@ -230,12 +231,12 @@
                 <h3 class="menu__product-title">Шафи металеві для одягу</h3>
                 <div class="menu__product-list">
                   <?php for ($i = 0; $i < 12; $i++) { ?>
-                    <div class="menu__product">
+                    <a href="item.php" class="menu__product">
                       <div class="menu__product-img">
                         <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                       </div>
                       <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-                    </div>
+                    </a>
                   <?php } ?>
                 </div>
               </div>
@@ -247,12 +248,12 @@
               <div class="menu__product-colection">
                 <h3 class="menu__product-title">Шафи металеві для одягу</h3>
                 <div class="menu__product-list">
-                  <div class="menu__product">
+                  <a href="item.php" class="menu__product">
                     <div class="menu__product-img">
                       <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                     </div>
                     <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -266,10 +267,10 @@
                     
         <div class="menu__services-item">
           <div class="menu__services-wrap">
-            <a class="menu__services-link" href="">Послуги</a>
-            <a class="menu__services-link" href="">Послуги</a>
-            <a class="menu__services-link" href="">Послуги</a>
-            <a class="menu__services-link" href="">Послуги</a>
+            <a class="menu__services-link" href="services.php">Послуги</a>
+            <a class="menu__services-link" href="services.php">Послуги</a>
+            <a class="menu__services-link" href="services.php">Послуги</a>
+            <a class="menu__services-link" href="services.php">Послуги</a>
           </div>
 
         </div>
@@ -382,7 +383,7 @@
     </section>
 
     <section class="partners">
-      <h2 class="slider-title partners__title">Наші партнери</h2>
+      <h2 class="partners__title">Наші партнери</h2>
       <div class="partners__items">
         <?php for ($i = 0; $i < 10; $i++) { ?>
           <div class="partners__item">
@@ -461,25 +462,23 @@
       </div>
 
       <div class="footer__customers">
-        <span class="footer__title">Клієнтам</span>
-        <a href="/" class="footer__text">Про компанію</span>
-        <a href="/" class="footer__text">Доставка і оплата</span>
-        <a href="/" class="footer__text">Повернення та обмін</span>
-        <a href="/" class="footer__text">Оферта</span>
-        <a href="/" class="footer__text">Сертифікати якості</span>
-        <a href="/" class="footer__text">Блог</span>
-        <a href="/" class="footer__text footer__text_color">Прайс</span>
-        <a href="/" class="footer__text footer__text_color">Каталог товарів</span>
+        <a class="footer__title">Клієнтам</a>
+        <a href="/" class="footer__text">Про компанію</a>
+        <a href="/" class="footer__text">Доставка і оплата</a>
+        <a href="/" class="footer__text">Повернення та обмін</a>
+        <a href="/" class="footer__text">Оферта</a>
+        <a href="/" class="footer__text">Сертифікати якості</a>
+        <a href="/" class="footer__text">Блог</a>
+        <a href="/" class="footer__text footer__text_color">Прайс</a>
+        <a href="/" class="footer__text footer__text_color">Каталог товарів</a>
       </div>
     </footer>
   </main>
+  
   <script src="swiper/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script>
-
-  </script>
 </body>
 
 </html>

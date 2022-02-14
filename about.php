@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Document</title>
 </head>
@@ -35,7 +34,7 @@
       </div>
 
       <div class="mobile-menu__items-wrap">
-        <div class="menu__product-colection">
+        <div class="menu__product-collection">
           <h3 class="menu__product-title">Шафи металеві для одягу</h3>
           <div class="menu__product-list">
             <?php for ($i = 0; $i < 12; $i++) { ?>
@@ -70,7 +69,6 @@
         <img src="styles/images/icons/ic_menu-arrow-black.svg" alt="img">
         До меню
       </div>
-
       <div class="mobile-menu__items-wrap">
         <div class="menu__product-colection">
           <h3 class="menu__product-title">Шафи металеві для одягу</h3>
@@ -84,11 +82,11 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
   <header class="header">
+
     <a class="header__logo" href="/">
       <img src="styles/images/logo.svg" alt="img">
     </a>
@@ -129,7 +127,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </header>
   <div class="menu">
@@ -143,67 +140,67 @@
         <div class="menu__items-container">
           <ul class="menu__items-list">
             <li id="1" class="menu__item">
-              <span>
+              <span class="menu__item-title">
                 Шафи металеві
-                <div class="menu__list-item-arrow"></div>
+                <span class="menu__list-item-arrow"></span>
               </span>
             </li>
             <li id="2" class="menu__item">
-              <span>
+              <span class="menu__item-title">
                 Супутні матеріали до шаф
-                <div class="menu__list-item-arrow"></div>
+                <span class="menu__list-item-arrow"></span>
               </span>
             </li>
             <li class="menu__item">
-              <span>
+              <span class="menu__item-title">
                 Поштові скриньки
-                <div class="menu__list-item-arrow"></div>
+                <span class="menu__list-item-arrow"></span>
               </span>
             </li>
             <li class="menu__item">
-              <span>
+              <span class="menu__item-title">
                 Пожежні шафи
-                <div class="menu__list-item-arrow"></div>
+                <span class="menu__list-item-arrow"></span>
               </span>
             </li>
             <li class="menu__item">
-              <span>
+              <span class="menu__item-title">
+                Захист зовнішнього блоку кондиціонера
+                <span class="menu__list-item-arrow"></span>
+              </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-title">
+                Захист зовнішнього блоку кондиціонера
+                <span class="menu__list-item-arrow"></span>
+              </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-title">
+                Захист зовнішнього блоку кондиціонера
+                <span class="menu__list-item-arrow"></span>
+              </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-title">
+                Захист зовнішнього блоку кондиціонера
+                <span class="menu__list-item-arrow"></span>
+              </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__item-title">
                 Захист зовнішнього блоку кондиціонера
                 <div class="menu__list-item-arrow"></div>
               </span>
             </li>
             <li class="menu__item">
-              <span>
+              <span class="menu__item-title">
                 Захист зовнішнього блоку кондиціонера
                 <div class="menu__list-item-arrow"></div>
               </span>
             </li>
             <li class="menu__item">
-              <span>
-                Захист зовнішнього блоку кондиціонера
-                <div class="menu__list-item-arrow"></div>
-              </span>
-            </li>
-            <li class="menu__item">
-              <span>
-                Захист зовнішнього блоку кондиціонера
-                <div class="menu__list-item-arrow"></div>
-              </span>
-            </li>
-            <li class="menu__item">
-              <span>
-                Захист зовнішнього блоку кондиціонера
-                <div class="menu__list-item-arrow"></div>
-              </span>
-            </li>
-            <li class="menu__item">
-              <span>
-                Захист зовнішнього блоку кондиціонера
-                <div class="menu__list-item-arrow"></div>
-              </span>
-            </li>
-            <li class="menu__item">
-              <span>
+              <span class="menu__item-title">
                 Захист зовнішнього блоку кондиціонера
                 <div class="menu__list-item-arrow"></div>
               </span>
@@ -225,7 +222,6 @@
                   <?php } ?>
                 </div>
               </div>
-
               <div class="menu__product-colection">
                 <h3 class="menu__product-title">Шафи металеві для одягу</h3>
                 <div class="menu__product-list">
@@ -257,13 +253,11 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="menu__btn menu__btn-services">
         <img src="styles/images/icons/ic_menu.svg" alt="img">
         Послуги
-
         <div class="menu__services-item">
           <div class="menu__services-wrap">
             <a class="menu__services-link" href="">Послуги</a>
@@ -271,7 +265,6 @@
             <a class="menu__services-link" href="">Послуги</a>
             <a class="menu__services-link" href="">Послуги</a>
           </div>
-
         </div>
       </div>
       <a class="menu__link menu__link-about" href="/">Про компанію</a>
@@ -280,116 +273,123 @@
     <img class="menu__cart-icon" src="styles/images/icons/ic_cart.svg" alt="img">
   </div>
 
-  <main class="detail">
-    <div class="crumbs">
-      <a class="crumbs__link" href="">
-        Головна
-        <img class="crumbs__arrow" src="styles/images/icons/ic_arrow-crumbs.svg" alt="img">
-      </a>
-      <a class="crumbs__link" href="">
-        Шафи металеві
-        <img class="crumbs__arrow" src="styles/images/icons/ic_arrow-crumbs.svg" alt="img">
-      </a>
-      <span>Однорівневі</span>
+  <div class="crumbs">
+    <a class="crumbs__link" href="">
+      Головна
+      <img class="crumbs__arrow" src="styles/images/icons/ic_arrow-crumbs.svg" alt="img">
+    </a>
+    <span>Про компанію</span>
+  </div>
+
+  <div class="about">
+
+    <div class="about__info">
+      <img src="styles/images/menu-photo-for-test/photo-about.png" alt="img" class="about__img">
     </div>
 
-    <div class="detail__title-wrap">
-      <h1 class="detail__title">Шафа металева для одягу ШОМ 1/30</h1>
-      <span class="detail__art">Код товару: 0000000</span>
+    <div class="about__text-wrap">
+      <span class="about__title">Про компанію</span>
+      <span class="about__text">
+        Компанія LEVMETAL вийшла на ринок у 2016 році, і на даний момент є великим виробником металевих офісних та промислових меблів, охоронних систем, систем зберігання, а також інших виробів з металу.
+
+        За цей час, завдяки гнучкій ціновій політиці та високій якості наших виробів, ми завоювали довіру як великих компаній, так і роздрібних покупців.
+
+        Компанія LEVMETAL вийшла на ринок у 2016 році, і на даний момент є великим виробником металевих офісних та промислових меблів, охоронних систем, систем зберігання, а також інших виробів з металу.
+      </span>
     </div>
 
-    <div class="detail__item">
-      <div class="detail__item-photo">
-        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper detal-slider-big">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/image 25.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/3.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/slider.png" />
-            </div>
-          </div>
+  </div>
+
+  <section class="partners">
+    <h2 class="partners__title">Наші партнери</h2>
+    <div class="partners__items">
+      <?php for ($i = 0; $i < 10; $i++) { ?>
+        <div class="partners__item">
         </div>
-        <div thumbsSlider="" class="swiper detal-slider-small">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/image 25.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/3.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="styles/images/menu-photo-for-test/slider.png" />
-            </div>
-          </div>
+      <?php } ?>
+    </div>
+  </section>
+
+  <section class="question">
+    <div class="question__wrap">
+      <span class="question__text">
+        Залишились питання? Залиште контакти
+        та ми зв’яжемось з Вами найближчим часом
+      </span>
+      <div class="question__input-wrap">
+        <input class="question__input" type="text" placeholder="+38063">
+        <button class="question__btn">Замовити дзвінок</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__contacts">
+      <span class="footer__title">Контакти</span>
+
+      <div class="footer__cotacts-wrap">
+        <span class="footer__contacts-name">Менеджер зі збуту</span>
+        <div class="footer__phone-wrap">
+          <a href="tel:380987570000">+380987570000</a>
+          <a href="tel:380987570000">+380737570000</a>
         </div>
+        <a href="mailto:info@levmetal.com">info@levmetal.com</a>
       </div>
 
-      <form class="detail__filter filter">
-        <div class="filter__size">
-          <div class="filter__type">
-            <span class="filter__title">Тип шафи:</span>
-            <div class="filter__type-wrap">
-              <div class="filter__type-title-wrap">
-                <span class="filter__item-main">Однорівнева з додатковою поличкою 0</span>
-                <img class="filter__icon" src="styles/images/icons/ic_drop-down-arrow.svg" alt="img">
-              </div>
-              <div class="filter__type-item">
-                <?php for ($i = 0; $i < 10; $i++) { ?>
-                  <label class="filter__item-label" for="name-<?= $i ?>">
-                    <span class="filter__item">Однорівнева з додатковою поличкою <?= $i ?></span>
-                    <input id="name-<?= $i ?>" name="item-type" type="radio" value="Однорівнева з додатковою поличкою <?= $i ?>">
-                  </label>
-                <?php } ?>
-              </div>
-            </div>
-
-            <span class="filter__title">Ширина секцій:</span>
-            <div class="filter__radio-wrap">
-              <label for="name" name="width" class="filter__width-wrap active">
-                <input id="name" name="some-radio" type="radio" checked>
-                <div class="filter__width-radio"></div>
-                <span class="filter__width-text">300 мм</span>
-              </label>
-              <label for="name2" name="width" class="filter__width-wrap">
-                <input id="name2" name="some-radio" type="radio">
-                <div class="filter__width-radio"></div>
-                <span class="filter__width-text">400 мм</span>
-              </label>
-            </div>
-
-            <span class="filter__title">Кількість секцій::</span>
-            <div class="filter__radio-wrap">
-              <?php for ($i = 0; $i < 15; $i++) { ?>
-                <label for="count-<?= $i ?>" name="width" class="filter__width-wrap <?= $i === 0 ? 'active' : '' ?>">
-                  <input id="count-<?= $i ?>" name="some-radio2" type="radio" checked>
-                  <div class="filter__width-radio"></div>
-                  <span class="filter__width-text"><?= $i ?></span>
-                </label>
-
-              <?php } ?>
-
-            </div>
-
-          </div>
+      <div class="footer__cotacts-wrap">
+        <span class="footer__contacts-name">
+          Лазерна порізка, гнуття
+          металу, порошкове фарбування
+        </span>
+        <div class="footer__phone-wrap">
+          <a href="tel:380987570000">+380964578245</a>
         </div>
+        <a href="mailto:info@levmetal.com">info@levmetal.com</a>
+      </div>
 
+      <div class=" footer__cotacts-wrap footer__individual">
+        <span class="footer__contacts-name">
+          Індивідуальні замовлення
+        </span>
+        <div class="footer__phone-wrap">
+          <a href="tel:380987570000">+380964578245</a>
+        </div>
+        <a href="mailto:info@levmetal.com">info@levmetal.com</a>
+      </div>
 
-      </form>
-
-
+      <span class="footer__title">Підписатись на оновлення та знижки</span>
+      <div class="footer__input-wrap">
+        <input class="footer__input" type="text" placeholder="Введіть ваш email">
+        <button class="red-btn">Підписатись</button>
+      </div>
     </div>
-  </main>
 
+    <div class="footer__address">
+      <span class="footer__title">Адреса</span>
+      <span class="footer__text">79037, Україна</span>
+      <span class="footer__text">м.Львів, вул. Земельна 28А </span>
+      <span class="footer__title">Години роботи:</span>
+      <span class="footer__text">пн-пт: 8:30 -17:30</span>
+      <span class="footer__title">Email</span>
+      <span class="footer__text">info@levmetal.com</span>
+      <span class="footer__title">Соціальні мережі:</span>
+      <a href="/">
+        <img src="styles/images/icons/ic_facebook.svg" alt="img">
+      </a>
+    </div>
+
+    <div class="footer__customers">
+      <a class="footer__title">Клієнтам</a>
+      <a href="/" class="footer__text">Про компанію</a>
+      <a href="/" class="footer__text">Доставка і оплата</a>
+      <a href="/" class="footer__text">Повернення та обмін</a>
+      <a href="/" class="footer__text">Оферта</a>
+      <a href="/" class="footer__text">Сертифікати якості</a>
+      <a href="/" class="footer__text">Блог</a>
+      <a href="/" class="footer__text footer__text_color">Прайс</a>
+      <a href="/" class="footer__text footer__text_color">Каталог товарів</a>
+    </div>
+  </footer>
 
   <script src="swiper/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
