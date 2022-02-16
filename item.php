@@ -51,7 +51,7 @@
 
       <div class="menu__product-colection">
         <h3 class="menu__product-title">Шафи металеві для одягу</h3>
-        <div class="menu__product-list">
+        <div class="menu__product-list">`
 					<?php for ($i = 0; $i < 12; $i++) { ?>
             <a href="item.php" class="menu__product">
               <div class="menu__product-img">
@@ -129,7 +129,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </header>
 
@@ -270,7 +269,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
     <div class="menu__btn menu__btn-services">

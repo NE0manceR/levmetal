@@ -1,22 +1,25 @@
 "use strict";
 
-// ============open search in mobile============
+// ============open search in mobile ============
 let searchStatus = true;
-let callBtnWidth = $('.header__call-btn').width() + 45;
+let callBtn = $('.header__call-btn');
+
+let callBtnWidth = callBtn.width() + 45;
 
 $('.search').on('click', function (e) {
 
     if (e.target.classList[0] === 'search__close-icon') {
-
         searchStatus = true;
-        $('.header__call-btn').css('width', "".concat(callBtnWidth, "px"));
-        $('.header__call-btn').css('padding', '12px 20px');
+        callBtn.css('width', "".concat(callBtnWidth, "px"));
+        callBtn.css('padding', '12px 20px');
+
         $('.search__close-icon').fadeOut();
+
         setTimeout(function () {
-            $('.header__call-btn').css('opacity', '1');
+            callBtn.css('opacity', '1');
         }, 400);
 
-        setTimeout(()=>{
+        setTimeout(() => {
             inputWrap.removeClass('active');
             search.blur();
         }, 500)
@@ -25,40 +28,37 @@ $('.search').on('click', function (e) {
 
     if ($(window).width() < 450 && searchStatus) {
         searchStatus = false;
-        $('.header__call-btn').css('opacity', '0');
-        $('.header__call-btn').css('width', "".concat(callBtnWidth, "px"));
+        callBtn.css('opacity', '0');
+        callBtn.css('width', "".concat(callBtnWidth, "px"));
         setTimeout(function () {
-            $('.header__call-btn').css('padding', '0px');
-            $('.header__call-btn').css('width', '0px');
+            callBtn.css('padding', '0px');
+            callBtn.css('width', '0px');
             $('.search__close-icon').fadeIn();
         }, 300);
     }
 });
-// ============open search in mobile============
 
-// ======= Open language list=============
+// ======= Open language list =============
 $('.header__language').on('click', function () {
     $('.header__language-show').fadeToggle(1);
     $('.header__language-icon').toggleClass('active');
-}); // ======= Open language list=============
+});
 
-// ============show menu items desktop menu==================
+// ============show menu items desktop menu ==================
 $('.menu__item').mouseenter(function () {
     $('.menu__item').removeClass('active');
     $(this).addClass('active');
     $('.menu__products-position').stop().fadeOut(0);
     $("#item-".concat($(this).attr('id'))).stop().fadeIn();
 });
-// ============show menu items==================
 
-// =========== show menu bcg
+// =========== show items menu bcg ============
 
 $('.menu__btn-items, .menu__btn-services').hover(function () {
     console.log('work');
     $('.menu-bcg').stop().fadeToggle(100, "linear");
 })
 
-// =========== show menu bcg
 
 // =========== mobile menu==============
 $('.menu__btn-mobile, .mobile-menu__close').on('click', function () {
@@ -72,7 +72,6 @@ $('.mobile-menu__back, .mobile-menu__close').on('click', function () {
     $('.mobile-menu__items').fadeOut();
     $('.mobile-menu__list').fadeIn();
 });
-// =========== mobile menu==============
 
 
 //================ set slider=============
@@ -169,23 +168,7 @@ let homeItem2 = new Swiper(".home-item-slider-new", {
 
 });
 
-// let swiper1 = new Swiper(".detal-slider-small", {
-//   spaceBetween: 24,
-//   slidesPerView: 3.5,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-//
-// let swiper2 = new Swiper(".detal-slider-big", {
-//   spaceBetween: 10,
-//
-// });
-
-//================ set slider=============
-
-
-//================ type filter =============
-
+//================ type filter ================
 $('.filter__type-title-wrap').on('click', openFilter);
 
 $('.filter__item').on('click', function () {
@@ -198,14 +181,13 @@ function openFilter() {
 }
 
 
-$('.filter__width-wrap').on('click', function (e) {
+$('.filter__width-wrap').on('click', function () {
     $(this).parent().find('.filter__width-wrap').removeClass('active');
 
     $(this).addClass('active');
 })
 
 // ===========detail text change========/
-
 $('.info__title').on('click', function () {
     console.log('work');
     $('.info__title').removeClass('active');
@@ -240,7 +222,6 @@ $(document).ready(function () {
 
 
 // ===============search==============
-
 let search = $('.search__input');
 let inputWrap = $('.header__search-wrap');
 
