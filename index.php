@@ -299,6 +299,7 @@
 <!--  <img class="menu__cart-icon" src="styles/images/icons/ic_cart.svg" alt="img">-->
 </div>
 <div class="menu-bcg"></div>
+
 <main class="home">
   <section class="home__main-slider-wrap">
 

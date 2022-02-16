@@ -35,16 +35,16 @@
     </div>
 
     <div class="mobile-menu__items-wrap">
-      <div class="menu__product-collection">
+      <div class="menu__product-colection">
         <h3 class="menu__product-title">Шафи металеві для одягу</h3>
         <div class="menu__product-list">
 					<?php for ($i = 0; $i < 12; $i++) { ?>
-            <div class="menu__product">
+            <a href="item.php" class="menu__product">
               <div class="menu__product-img">
                 <img src="styles/images/menu-photo-for-test/1.png" alt="img">
               </div>
               <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-            </div>
+            </a>
 					<?php } ?>
         </div>
       </div>
@@ -53,12 +53,12 @@
         <h3 class="menu__product-title">Шафи металеві для одягу</h3>
         <div class="menu__product-list">
 					<?php for ($i = 0; $i < 12; $i++) { ?>
-            <div class="menu__product">
+            <a href="item.php" class="menu__product">
               <div class="menu__product-img">
                 <img src="styles/images/menu-photo-for-test/1.png" alt="img">
               </div>
               <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-            </div>
+            </a>
 					<?php } ?>
         </div>
       </div>
@@ -70,6 +70,7 @@
       <img src="styles/images/icons/ic_menu-arrow-black.svg" alt="img">
       До меню
     </div>
+
     <div class="mobile-menu__items-wrap">
       <div class="menu__product-colection">
         <h3 class="menu__product-title">Шафи металеві для одягу</h3>
@@ -83,13 +84,13 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
 <header class="header">
-  
   <a class="header__logo" href="/">
-    <img src="styles/images/logo.svg" alt="img">
+    <img src="styles/images/logo.png" alt="img">
   </a>
 
   <div class="header__content">
@@ -128,80 +129,86 @@
         </div>
       </div>
     </div>
+
   </div>
 </header>
+
 <div class="menu">
   <div class="menu__btn-wrap">
     <div class="menu__btn menu__btn-mobile">
       <img src="styles/images/icons/ic_menu.svg" alt="img">
     </div>
     <div class="menu__btn menu__btn-items">
-      <img src="styles/images/icons/ic_menu.svg" alt="img">
+      <div class="menu__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       Товари
       <div class="menu__items-container">
         <ul class="menu__items-list">
           <li id="1" class="menu__item">
-              <span class="menu__item-title">
+              <span>
                 Шафи металеві
-                <span class="menu__list-item-arrow"></span>
+                <div class="menu__list-item-arrow"></div>
               </span>
           </li>
           <li id="2" class="menu__item">
-              <span class="menu__item-title">
+              <span>
                 Супутні матеріали до шаф
-                <span class="menu__list-item-arrow"></span>
+                <div class="menu__list-item-arrow"></div>
               </span>
           </li>
           <li class="menu__item">
-              <span class="menu__item-title">
+              <span>
                 Поштові скриньки
-                <span class="menu__list-item-arrow"></span>
+                <div class="menu__list-item-arrow"></div>
               </span>
           </li>
           <li class="menu__item">
-              <span class="menu__item-title">
+              <span>
                 Пожежні шафи
-                <span class="menu__list-item-arrow"></span>
+                <div class="menu__list-item-arrow"></div>
               </span>
           </li>
           <li class="menu__item">
-              <span class="menu__item-title">
-                Захист зовнішнього блоку кондиціонера
-                <span class="menu__list-item-arrow"></span>
-              </span>
-          </li>
-          <li class="menu__item">
-              <span class="menu__item-title">
-                Захист зовнішнього блоку кондиціонера
-                <span class="menu__list-item-arrow"></span>
-              </span>
-          </li>
-          <li class="menu__item">
-              <span class="menu__item-title">
-                Захист зовнішнього блоку кондиціонера
-                <span class="menu__list-item-arrow"></span>
-              </span>
-          </li>
-          <li class="menu__item">
-              <span class="menu__item-title">
-                Захист зовнішнього блоку кондиціонера
-                <span class="menu__list-item-arrow"></span>
-              </span>
-          </li>
-          <li class="menu__item">
-              <span class="menu__item-title">
+              <span>
                 Захист зовнішнього блоку кондиціонера
                 <div class="menu__list-item-arrow"></div>
               </span>
           </li>
           <li class="menu__item">
-              <span class="menu__item-title">
+              <span>
                 Захист зовнішнього блоку кондиціонера
                 <div class="menu__list-item-arrow"></div>
               </span>
           </li>
           <li class="menu__item">
-              <span class="menu__item-title">
+              <span>
+                Захист зовнішнього блоку кондиціонера
+                <div class="menu__list-item-arrow"></div>
+              </span>
+          </li>
+          <li class="menu__item">
+              <span>
+                Захист зовнішнього блоку кондиціонера
+                <div class="menu__list-item-arrow"></div>
+              </span>
+          </li>
+          <li class="menu__item">
+              <span>
+                Захист зовнішнього блоку кондиціонера
+                <div class="menu__list-item-arrow"></div>
+              </span>
+          </li>
+          <li class="menu__item">
+              <span>
+                Захист зовнішнього блоку кондиціонера
+                <div class="menu__list-item-arrow"></div>
+              </span>
+          </li>
+          <li class="menu__item">
+              <span>
                 Захист зовнішнього блоку кондиціонера
                 <div class="menu__list-item-arrow"></div>
               </span>
@@ -210,29 +217,38 @@
 
         <div id="item-1" class="menu__products-position">
           <div class="menu__products-wrap">
+
+            <a href="item.php" class="menu__product-colection">
+              <div class="menu__constructor">
+                <img src="styles/images/constructor.png" alt="img">
+                <span>Конструктор шаф металевих для одягу</span>
+              </div>
+            </a>
+
             <div class="menu__product-colection">
               <h3 class="menu__product-title">Шафи металеві для одягу</h3>
               <div class="menu__product-list">
 								<?php for ($i = 0; $i < 12; $i++) { ?>
-                  <div class="menu__product">
+                  <a href="item.php" class="menu__product">
                     <div class="menu__product-img">
                       <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                     </div>
                     <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-                  </div>
+                  </a>
 								<?php } ?>
               </div>
             </div>
+
             <div class="menu__product-colection">
               <h3 class="menu__product-title">Шафи металеві для одягу</h3>
               <div class="menu__product-list">
 								<?php for ($i = 0; $i < 12; $i++) { ?>
-                  <div class="menu__product">
+                  <a href="item.php" class="menu__product">
                     <div class="menu__product-img">
                       <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                     </div>
                     <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-                  </div>
+                  </a>
 								<?php } ?>
               </div>
             </div>
@@ -244,35 +260,45 @@
             <div class="menu__product-colection">
               <h3 class="menu__product-title">Шафи металеві для одягу</h3>
               <div class="menu__product-list">
-                <div class="menu__product">
+                <a href="item.php" class="menu__product">
                   <div class="menu__product-img">
                     <img src="styles/images/menu-photo-for-test/1.png" alt="img">
                   </div>
                   <span class="menu__product-name">Конструктор металевих шаф для одягу</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <div class="menu__btn menu__btn-services">
-      <img src="styles/images/icons/ic_menu.svg" alt="img">
+      <div class="menu__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--        <img src="styles/images/icons/ic_menu.svg" alt="img">-->
       Послуги
+
       <div class="menu__services-item">
         <div class="menu__services-wrap">
-          <a class="menu__services-link" href="">Послуги</a>
-          <a class="menu__services-link" href="">Послуги</a>
-          <a class="menu__services-link" href="">Послуги</a>
-          <a class="menu__services-link" href="">Послуги</a>
+          <a class="menu__services-link" href="services.php">Послуги</a>
+          <a class="menu__services-link" href="services.php">Послуги</a>
+          <a class="menu__services-link" href="services.php">Послуги</a>
+          <a class="menu__services-link" href="services.php">Послуги</a>
         </div>
+
       </div>
     </div>
-    <a class="menu__link menu__link-about" href="/">Про компанію</a>
+    <a class="menu__link menu__link-about" href="about.php">Про компанію</a>
     <a class="menu__link menu__link-contacts" href="/">Контакти</a>
   </div>
-  <img class="menu__cart-icon" src="styles/images/icons/ic_cart.svg" alt="img">
+  <div class="menu__cart-icon"></div>
+  <!--  <img class="menu__cart-icon" src="styles/images/icons/ic_cart.svg" alt="img">-->
 </div>
+<div class="menu-bcg"></div>
 
 <main class="detail">
   <div class="crumbs">

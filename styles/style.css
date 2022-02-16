@@ -20,6 +20,11 @@ html {
 }
 @font-face {
   font-family: "TTNorms-Regular";
+  src: url("fonts/TTNorms-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "TTNorms-Regular";
   src: url("fonts/TTNorms-Bold.ttf");
   font-weight: 700;
 }
@@ -230,7 +235,7 @@ html {
   top: 0;
   left: 0;
   display: none;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.2);
   height: 100vh;
   width: 100%;
   z-index: 3;
@@ -668,7 +673,7 @@ html {
 }
 .home__main-slider-wrap .main-items {
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
   justify-content: space-between;
 }
 @media (max-width: 760px) {
@@ -828,7 +833,7 @@ html {
 }
 @media (max-width: 460px) {
   .partners__items {
-    grid-template-columns: repeat(2, 130px);
+    grid-template-columns: repeat(2, 46%);
   }
 }
 .partners__item {
@@ -843,7 +848,7 @@ html {
 }
 .partners__title {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 24px;
 }
 @media (max-width: 500px) {
@@ -854,7 +859,7 @@ html {
 
 .slider-title {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 24px;
 }
 @media (max-width: 750px) {
