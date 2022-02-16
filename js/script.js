@@ -5,7 +5,9 @@ let searchStatus = true;
 let callBtnWidth = $('.header__call-btn').width() + 45;
 
 $('.search').on('click', function (e) {
+
     if (e.target.classList[0] === 'search__close-icon') {
+
         searchStatus = true;
         $('.header__call-btn').css('width', "".concat(callBtnWidth, "px"));
         $('.header__call-btn').css('padding', '12px 20px');
@@ -13,6 +15,11 @@ $('.search').on('click', function (e) {
         setTimeout(function () {
             $('.header__call-btn').css('opacity', '1');
         }, 400);
+
+        setTimeout(()=>{
+            inputWrap.removeClass('active');
+            search.blur();
+        }, 500)
         return;
     }
 
@@ -43,6 +50,15 @@ $('.menu__item').mouseenter(function () {
     $("#item-".concat($(this).attr('id'))).stop().fadeIn();
 });
 // ============show menu items==================
+
+// =========== show menu bcg
+
+$('.menu__btn-items, .menu__btn-services').hover(function () {
+    console.log('work');
+    $('.menu-bcg').stop().fadeToggle(100, "linear");
+})
+
+// =========== show menu bcg
 
 // =========== mobile menu==============
 $('.menu__btn-mobile, .mobile-menu__close').on('click', function () {
@@ -208,12 +224,9 @@ $('#settings-title').on('click', function () {
 })
 
 
-
 $(document).ready(function () {
     let containerWidth = $('.services__work').width();
     let img = $('.services__work-img')
-
-
 
     if ($(window).width() <= 500) {
         img.css('width', `300px`)
@@ -223,7 +236,28 @@ $(document).ready(function () {
         img.css('width', `${containerWidth / 4 - 25}px`)
         img.css('height', `${containerWidth / 4 - 25}px`)
     }
-
-
-
 })
+
+
+// ===============search==============
+
+let search = $('.search__input');
+let inputWrap = $('.header__search-wrap');
+
+
+inputWrap.on('click', function () {
+
+    $(this).addClass('active');
+    search.focus();
+    search.attr('placeholder', '');
+})
+
+search.on('blur', function () {
+    if ($(this).val() === '') {
+        $(this).attr('placeholder', 'Пошук товару');
+    }
+
+    inputWrap.removeClass('active');
+})
+// ===============search==============
+
