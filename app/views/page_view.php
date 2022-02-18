@@ -22,7 +22,8 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<link href="<?=SERVER_URL?>assets/font-awesome-5.15.1/css/all.min.css" rel="stylesheet" />
-	<link href="<?=SERVER_URL?>style/ws__main.css" rel="stylesheet" />
+  <link href="<?=SERVER_URL?>assets/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="<?=SERVER_URL?>style/ws__main.css" rel="stylesheet" />
 	<link href="<?=SERVER_URL?>style/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -30,7 +31,7 @@
 	<?php
 		include "@commons/header.php";
 
-		echo('<main class="container">');
+		echo('<main>');
 		if(isset($view_file)) require_once($view_file.'.php');
 		echo('</main>');
 
@@ -39,9 +40,11 @@
 
 	<div id="divLoading"></div>
 	<div id="modal-bg"></div>
+  <script type="text/javascript" src="<?=SERVER_URL?>assets/swiper/swiper-bundle.min.js"></script>
 
-	<script type="text/javascript" src="<?=SERVER_URL?>assets/jquery/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="<?=SERVER_URL?>js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="<?=SERVER_URL?>assets/sticky.min.js"></script>
+  <script type="text/javascript" src="<?=SERVER_URL?>js/script.js"></script>
 	<script type="text/javascript">
 		var SERVER_URL = '<?=SERVER_URL?>';
 		var SITE_URL = '<?=SITE_URL?>';
