@@ -1,3 +1,10 @@
+<?php
+	if($_SESSION['alias']->link == 'constructor' || $_SESSION['alias']->link == 'constructor/all'){
+		header("Location: /");
+	}
+?>
+
+<!DOCTYPE html>
 <html lang="<?=$_SESSION['language']?>" prefix="og: http://ogp.me/ns#">
 <head>
 	<title><?=$_SESSION['alias']->title?></title>
@@ -24,7 +31,8 @@
 	<link href="<?=SERVER_URL?>assets/font-awesome-5.15.1/css/all.min.css" rel="stylesheet" />
   <link href="<?=SERVER_URL?>assets/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link href="<?=SERVER_URL?>style/ws__main.css" rel="stylesheet" />
-	<link href="<?=SERVER_URL?>style/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="<?=SERVER_URL?>style/style.css" rel="stylesheet" />
 </head>
 <body>
      
@@ -40,10 +48,13 @@
 
 	<div id="divLoading"></div>
 	<div id="modal-bg"></div>
-  <script type="text/javascript" src="<?=SERVER_URL?>assets/swiper/swiper-bundle.min.js"></script>
 
   <script type="text/javascript" src="<?=SERVER_URL?>js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="<?=SERVER_URL?>assets/sticky.min.js"></script>
+  <script type="text/javascript" src="<?=SERVER_URL?>assets/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="<?=SERVER_URL?>js/nouislider.min.js"></script>
+
   <script type="text/javascript" src="<?=SERVER_URL?>js/script.js"></script>
 	<script type="text/javascript">
 		var SERVER_URL = '<?=SERVER_URL?>';

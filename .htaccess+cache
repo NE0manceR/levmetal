@@ -12,6 +12,9 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 AddOutputFilterByType DEFLATE image/svg+xml
 AddOutputFilterByType DEFLATE image/x-icon
 </ifModule>
+
+
+; RedirectMatch 301 ^/blog/about /blog/about.html
  
 # кеш браузера
 <ifModule mod_expires.c>

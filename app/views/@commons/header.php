@@ -8,9 +8,6 @@
 		}
 	}
 ?>
-<pre>
-  <?php print_r($all_g)?>
-</pre>
 
 <div class="mobile-menu">
   <div class="mobile-menu__close-wrap">
@@ -26,7 +23,7 @@
         </div>
       </li>
 		<?php } ?>
-    </ul>
+  </ul>
 
   <div id="item-mobile-1" class="mobile-menu__items">
     <div class="mobile-menu__back">
@@ -88,7 +85,7 @@
 </div>
 
 <header class="header">
-  <a class="header__logo" href="/">
+  <a class="header__logo" href="<?= SITE_URL ?>">
     <img src=" <?= SERVER_URL ?>style/images/logo.png" alt="img">
   </a>
 
@@ -146,58 +143,51 @@
         </div>
         Товари
         <div class="menu__items-container">
-          
           <ul class="menu__items-list <?= $countElements > 9 ? 'menu__items-list-scroll' : '' ?> ">
-            <?php foreach ($all_g as $group_link) { ?>
-              <?php if($group_link->parent == 0 && $group_link->haveChild > 0) {?>
+						<?php foreach ($all_g as $group_link) { ?>
+							<?php if($group_link->parent == 0) {?>
                 <li id="<?= $group_link->id ?>" class="menu__item">
                   <span>
                     <?= $group_link->name ?>
                     <span class="menu__list-item-arrow"></span>
                   </span>
                 </li>
-              <?php } ?>
-            <?php } ?>
+							<?php } ?>
+						<?php } ?>
           </ul>
-	
-	        <?php foreach ($all_g as $group_link ) { ?>
-            <?php if($group_link->haveChild > 0 && $group_link->parent == 0) { ?>
-              <?php foreach ($all_g as $subGroupLink) { ?>
-                <?php if($subGroupLink->parent == $group_link->id) { ?>
-                  <div id="item-<?= $group_link->id ?>" class="menu__products-position">
-                    <div class="menu__products-wrap">
-                      <a href="item.php" class="menu__product-colection">
-                        <div class="menu__constructor">
-                          <img src="<?= SERVER_URL ?>style/images/constructor.png" alt="img">
-                          <span>Конструктор шаф металевих для одягу</span>
-                        </div>
-                      </a>
-                    <?php foreach ($all_g as $sub_group ) { ?>
-                      <?php if($sub_group->parent && $sub_group->haveChild) { ?>
-                        <div class="menu__product-colection">
-                          <h3 class="menu__product-title"><?= $sub_group->name ?></h3>
-                          <div class="menu__product-list">
-                            <?php foreach ($all_g as $to_group ) { ?>
-                              <?php if($to_group->parent && $to_group->haveChild == 0 && $sub_group->id == $to_group->parent)
-                              { ?>
-                                <a href="item.php" class="menu__product">
-                                  <div class="menu__product-img">
-                                    <img src="<?= SERVER_URL ?>style/images/menu-photo-for-test/1.png" alt="img">
-                                  </div>
-                                  <span class="menu__product-name"><?= $to_group->name ?></span>
-                                </a>
-                              <?php } ?>
-                            <?php } ?>
-                          </div>
-                        </div>
-                        <?php } ?>
-                      <?php } ?>
+					<?php foreach ($all_g as $subLink1) { ?>
+						<?php if($subLink1->parent == 0) {?>
+              <div id="item-<?= $subLink1->id ?>" class="menu__products-position">
+                <div class="menu__products-wrap">
+                  <a href="item.php" class="menu__product-colection">
+                    <div class="menu__constructor">
+                      <img src="<?= SERVER_URL ?>style/images/constructor.png" alt="img">
+                      <span>Конструктор шаф металевих для одягу</span>
                     </div>
-                  </div>
-                <?php } ?>
-              <?php } ?>
-            <?php } ?>
-          <?php } ?>
+                  </a>
+									<?php foreach ($all_g as $subLink2) {?>
+										<?php if ($subLink2->parent == $subLink1->id && $subLink2->haveChild) {?>
+                      <div class="menu__product-colection">
+                        <h3 class="menu__product-title"><?= $subLink2->name ?></h3>
+                        <div class="menu__product-list">
+													<?php foreach ($all_g as $subLink3) {?>
+														<?php if ($subLink3->parent == $subLink2->id && $subLink2->haveChild !== 1) {?>
+                              <a href="<?=SERVER_URL . $subLink3->link ?>" class="menu__product">
+                                <div class="menu__product-img">
+                                  <img src="<?= IMG_PATH . $subLink3->photo ?>" alt="<?= $subLink3->name ?>">
+                                </div>
+                                <span class="menu__product-name"><?= $subLink3->name ?></span>
+                              </a>
+														<?php } ?>
+													<?php } ?>
+                        </div>
+                      </div>
+										<?php } ?>
+									<?php } ?>
+                </div>
+              </div>
+						<?php } ?>
+					<?php } ?>
         </div>
       </div>
       <div class="menu__btn menu__btn-services">

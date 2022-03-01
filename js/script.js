@@ -126,6 +126,20 @@ let homeItem = new Swiper(".home-item-slider", {
 
 });
 
+let swiper = new Swiper(".mySwiper", {
+    spaceBetween: 24,
+    slidesPerView: 3.5,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+let swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
 let homeItem2 = new Swiper(".home-item-slider-new", {
     slidesPerView: 5,
     spaceBetween: 20,
@@ -236,5 +250,26 @@ search.on('blur', function () {
 
     inputWrap.removeClass('active');
 })
-// ===============search==============
 
+
+//=======================group filter============
+
+$(".product-group__label > input").on('change', function () {
+    $(this).parent().find('.product-group__checkbox').toggleClass('active');
+})
+
+let allgorupElements = $('.product-group__elements');
+allgorupElements.ready(setFilterHeight);
+
+function setFilterHeight() {
+    allgorupElements.each(function () {
+        let childrenCount = $(this).children().length;
+        let newHeight = childrenCount * 19 + 20;
+        $(this).css('height', `${newHeight}px`);
+    })
+}
+
+$('.product-group__title').on('click', function () {
+    $(this).parent().find('.product-group__elements').toggleClass('no-active');
+    $(this).toggleClass('title-active');
+});
